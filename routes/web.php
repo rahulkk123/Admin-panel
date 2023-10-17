@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\CategoryController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +20,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::view('dash','Admin');
+
+Route::get('admin/login',[AdminController::class,'Admin_Login']);
+Route::get('adminreg',[AdminController::class,'Register'])->name('register');
+
+Route::post('store', [AdminController::class,'Reg_store'])->name('Reg.store');
+
+Route::post('admin_login',[AdminController::class ,'Login'])->name('login');
+
+Route::get('dashboard',[AdminController::class, 'dashboard']);
+
+Route::get('category',[CategoryController::class ,'cat_create'])->name('category');
