@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\User\UserController;
 
 
 /*
@@ -30,4 +31,15 @@ Route::post('admin_login',[AdminController::class ,'Login'])->name('login');
 
 Route::get('dashboard',[AdminController::class, 'dashboard']);
 
-Route::get('category',[CategoryController::class ,'cat_create'])->name('category');
+//Route::get('category',[CategoryController::class ,'cat_create'])->name('category');
+
+//user
+Route::get('/',[UserController::class,'index'])->name('/');
+Route::get('login',[UserController::class,'user_login']);
+
+Route::post('validate.login',[UserController::class,'login'])->name('validate');
+//registration
+
+Route::get('registration',[UserController::class,'reg_login'])->name('registration');
+
+Route::post('login',[UserController::class,'Register'])->name('Register');
