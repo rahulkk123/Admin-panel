@@ -75,8 +75,8 @@
                             </form>
                         </div>
                         <div class="live-info">
-                            <p class="telephone"><i class="fa fa-phone" aria-hidden="true"></i><b class="phone-number">(+900) 123 456 7891</b></p>
-                            <p class="working-time">Mon-Fri: 8:30am-7:00pm; Sat-Sun: 9:30am-4:30pm</p>
+                            <p class="telephone"><i class="fa fa-phone" aria-hidden="true"></i><b class="phone-number">(+900) 123 456 7891</b></ p>
+                            <p class="working-time">Mon-Fri: 8:30am-7:00pm; Sat-Sun: 9:30am-4:30pm</ p>
                         </div>
                     </div>
 
@@ -1119,7 +1119,7 @@
                                             <p class="btn-control">
                                                 <a href="#" class="btn view-cart">view cart</a>
                                                 <a href="#" class="btn">checkout</a>
-                                            </p>
+                                            <p>
                                         </div>
                                     </div>
                                 </div>
@@ -1154,11 +1154,11 @@
                                 <i class="first-line">Fresh Tomato</i>
                                 <h3 class="second-line">
                                     <br> Our price ₹17</h3>
-                                <p class="third-line">1 Kg</p>
+                                <p class="third-line">1 Kg</ p>
                                 <p class="buttons">
                                     <a href="#" class="btn btn-bold">Shop now</a>
                                     <a href="#" class="btn btn-thin">View lookbook</a>
-                                </p>
+                                <p>
                             </div>
                         </div>
                     </li>
@@ -1169,11 +1169,11 @@
                             <div class="text-content">
                                 <i class="first-line">Onion</i>
                                 <h3 class="second-line">Our price  ₹295</h3>
-                                <p class="third-line">5kg</p>
+                                <p class="third-line">5kgp>
                                 <p class="buttons">
                                     <a href="#" class="btn btn-bold">Shop now</a>
                                     <a href="#" class="btn btn-thin">View lookbook</a>
-                                </p>
+                                <p>
                             </div>
                         </div>
                     </li>
@@ -1184,11 +1184,11 @@
                             <div class="text-content">
                                 <i class="first-line">Carrot</i>
                                 <h3 class="second-line"> Our price ₹10 </h3>
-                                <p class="third-line">1Kg</p>
+                                <p class="third-line">1Kgp>
                                 <p class="buttons">
                                     <a href="#" class="btn btn-bold">Shop now</a>
                                     <a href="#" class="btn btn-thin">View lookbook</a>
-                                </p>
+                                <p>
                             </div>
                         </div>
                     </li>
@@ -1316,7 +1316,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>55</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message"> </p>
+                                                    <p class="message"> <p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1342,7 +1342,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>80.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1368,7 +1368,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1394,7 +1394,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>50</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1420,7 +1420,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>25</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1446,7 +1446,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1472,7 +1472,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1498,7 +1498,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1524,7 +1524,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1550,7 +1550,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1580,7 +1580,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1606,7 +1606,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1632,7 +1632,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1658,7 +1658,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1684,7 +1684,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1710,7 +1710,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1736,7 +1736,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1762,7 +1762,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1788,7 +1788,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1814,7 +1814,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1844,7 +1844,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1870,7 +1870,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1896,7 +1896,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1924,7 +1924,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1957,7 +1957,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -1984,7 +1984,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2010,7 +2010,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2036,7 +2036,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2062,7 +2062,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2088,7 +2088,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2150,11 +2150,11 @@
                           
                         </div>
                         <div class="text-content">
-                            <i class="text1">Sumer Fruit</i>
-                            <b class="text2">100% Pure Natural Fruit Juice</b>
+                            <i class="text1">cooled collection </i>
+                            <b class="text2">100% Frash icecreams</b>
                             <p class="buttons">
                                 <a href="#" class="btn btn-thin">Shop Now</a>
-                            </p>
+                            <p>
                         </div>
                     </div>
                 </div>
@@ -2182,7 +2182,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-content">
+                        <div class="tab-content"> 
                             <div id="tab01_1st" class="tab-contain active">
                                 <ul class="products-list biolife-carousel nav-center-02 nav-none-on-mobile eq-height-contain" data-slick='{"rows":2 ,"arrows":true,"dots":false,"infinite":true,"speed":400,"slidesMargin":10,"slidesToShow":4, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 4}},{"breakpoint":992, "settings":{ "slidesToShow": 3, "slidesMargin": 30}},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin": 15}}]}'>
                                     <li class="product-item">
@@ -2201,7 +2201,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2227,7 +2227,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2253,7 +2253,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2279,7 +2279,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2305,7 +2305,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2331,7 +2331,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2357,7 +2357,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2383,7 +2383,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2409,7 +2409,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2435,7 +2435,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2453,7 +2453,7 @@
                                         <div class="contain-product layout-default">
                                             <div class="product-thumb">
                                                 <a href="#" class="link-to-product">
-                                                    <img src="assets/images/products/p-05.jpg" alt="Vegetables" width="270" height="270" class="product-thumnail">
+                                                    <img src="assets/images/products/p-09.jpg" alt="Vegetables" width="270" height="270" class="product-thumnail">
                                                 </a>
                                                 <a class="lookup btn_call_quickview" href="#"><i class="biolife-icon icon-search"></i></a>
                                             </div>
@@ -2465,7 +2465,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2491,7 +2491,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2517,7 +2517,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2543,7 +2543,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2569,7 +2569,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2595,7 +2595,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2621,7 +2621,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2647,7 +2647,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2673,7 +2673,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2699,7 +2699,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2717,19 +2717,19 @@
                                         <div class="contain-product layout-default">
                                             <div class="product-thumb">
                                                 <a href="#" class="link-to-product">
-                                                    <img src="assets/images/products/p-05.jpg" alt="Vegetables" width="270" height="270" class="product-thumnail">
+                                                    <img src="assets/images/products/p-21.jpg" alt="Vegetables" width="270" height="270" class="product-thumnail">
                                                 </a>
                                                 <a class="lookup btn_call_quickview" href="#"><i class="biolife-icon icon-search"></i></a>
                                             </div>
                                             <div class="info">
                                                 <b class="categories">Vegetables</b>
-                                                <h4 class="product-title"><a href="#" class="pr-name">Organic Hass Avocado, Large</a></h4>
+                                                <h4 class="product-title"><a href="#" class="pr-name">plantain variety/Eenthappazham</a></h4>
                                                 <div class="price ">
                                                     <ins><span class="price-amount"><span class="currencySymbol">₹</span>85.00</span></ins>
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2755,7 +2755,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2781,7 +2781,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2807,7 +2807,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2821,19 +2821,19 @@
                                         <div class="contain-product layout-default">
                                             <div class="product-thumb">
                                                 <a href="#" class="link-to-product">
-                                                    <img src="assets/images/products/p-07.jpg" alt="Vegetables" width="270" height="270" class="product-thumnail">
+                                                    <img src="assets/images/products/images.jpeg" alt="Vegetables" width="270" height="270" class="product-thumnail">
                                                 </a>
                                                 <a class="lookup btn_call_quickview" href="#"><i class="biolife-icon icon-search"></i></a>
                                             </div>
                                             <div class="info">
                                                 <b class="categories">Vegetables</b>
-                                                <h4 class="product-title"><a href="#" class="pr-name">13 Healing Powers of Lemons</a></h4>
+                                                <h4 class="product-title"><a href="#" class="pr-name">Badam</a></h4>
                                                 <div class="price ">
                                                     <ins><span class="price-amount"><span class="currencySymbol">₹</span>85.00</span></ins>
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2859,7 +2859,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2885,7 +2885,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2911,7 +2911,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2937,7 +2937,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -2963,7 +2963,7 @@
                                                     <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                                                 </div>
                                                 <div class="slide-down-box">
-                                                    <p class="message">All products are carefully selected to ensure food safety.</p>
+                                                    <p class="message">All products are carefully selected to ensure food safety.p>
                                                     <div class="buttons">
                                                         <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
                                                         <a href="#" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
@@ -3208,7 +3208,7 @@
                     <div class="banner-contain">
                         <div class="container">
                             <div class="biolife-title-box bgrd-bold biolife-title-box__bgrd-bold">
-                                <h3 class="title">Apple</h3>
+                                <h3 class="title">Organic Juices Items</h3>
                             </div>
                             <ul class="products-list vertical-layout-02 biolife-carousel nav-none-on-mobile" data-slick='{"rows":3,"arrows":false,"dots":false,"infinite":false,"speed":400,"slidesMargin":30,"slidesToShow":1, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 1}},{"breakpoint":768, "settings":{ "slidesToShow": 3, "rows":2, "slidesMargin":10}},{"breakpoint":500, "settings":{ "slidesToShow": 2, "rows":2, "slidesMargin":15}}]}'>
                                 <li class="product-item">
@@ -3225,10 +3225,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3251,10 +3251,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3277,10 +3277,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3303,10 +3303,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3329,10 +3329,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3355,10 +3355,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3381,10 +3381,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3407,10 +3407,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3433,10 +3433,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3459,10 +3459,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3485,10 +3485,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3511,10 +3511,10 @@
                                                 <del><span class="price-amount"><span class="currencySymbol">₹</span>29.00</span></del>
                                             </div>
                                             <div class="rating">
-                                                <p class="star-rating"><span class="width-80percent"></span></p>
+                                                <p class="star-rating"><span class="width-80percent"></span><p>
                                                 <span class="review-count">(05 Reviews)</span>
                                             </div>
-                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                                            <p class="desc">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.p>
                                             <div class="buttons">
                                                 <a href="#" class="btn add-to-cart-btn" tabindex="0">add to cart</a>
                                                 <a href="#" class="btn wishlist-btn" tabindex="0"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -3703,7 +3703,7 @@
                                 <p class="r-info">
                                     <span>Got Questions ?</span>
                                     <span class="number">(700)  9001-1909  (900) 689 -66</span>
-                                </p>
+                                <p>
                             </div>
                             <div class="contact-info-block footer-layout simple-info">
                                 <h4 class="title">Contact info</h4>
@@ -3796,7 +3796,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="copy-right-text"><p><a href="templateshub.net">Templates Hub</a></p></div>
+                            <div class="copy-right-text">p><a href="templateshub.net">Templates Hub</a><p></div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="payment-methods">
@@ -3909,14 +3909,14 @@
                 <div class="product-attribute">
                     <h4 class="title"><a href="#" class="pr-name">National Fresh Fruit</a></h4>
                     <div class="rating">
-                        <p class="star-rating"><span class="width-80percent"></span></p>
+                        <p class="star-rating"><span class="width-80percent"></span><p>
                     </div>
 
                     <div class="price price-contain">
                         <ins><span class="price-amount"><span class="currencySymbol">₹</span>85.00</span></ins>
                         <del><span class="price-amount"><span class="currencySymbol">₹</span>95.00</span></del>
                     </div>
-                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel maximus lacus. Duis ut mauris eget justo dictum tempus sed vel tellus.</p>
+                    <p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel maximus lacus. Duis ut mauris eget justo dictum tempus sed vel tellus.p>
                     <div class="from-cart">
                         <div class="qty-input">
                             <input type="text" name="qty12554" value="1" data-max_value="20" data-min_value="1" data-step="1">
@@ -3983,6 +3983,6 @@
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/biolife.framework.js"></script>
     <script src="assets/js/functions.js"></script>
-</body>
+</body> 
 
 </html>
