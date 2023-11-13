@@ -143,7 +143,7 @@
                                 <li>Track new orders</li>
                                 <li>Save items to your Wishlist</li>
                             </ul>
-                            <a href="{{Route('registration')}}" class="btn btn-bold">Create an account</a>
+                            <a href="{{Route('user.registration')}}" class="btn btn-bold">Create an account</a>
                         </div>
                     </div>
                 </div>

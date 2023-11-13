@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\User;
 
 use App\Models\User;
+use Illuminate\Contracts\Auth\Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Contracts\Service\Attribute\Required;
 
@@ -44,7 +45,7 @@ class UserController extends Controller
 
         User::create([
             'name' => $data['name'],
-            'email_id'  => $data['email'],
+            'email'  => $data['email'],
             'mobile_number' => $data['mobile'],
             'password' => Hash::make($data['password']),
             'confirm_password' => Hash::make($data['confirm_password'])
@@ -52,7 +53,7 @@ class UserController extends Controller
 
         ]);
 
-        return redirect('login')->with('success', 'Created Successfully ');
+        return redirect('user_login')->with('success', 'Created Successfully ');
     }
 
     function login(Request $request)
@@ -62,13 +63,13 @@ class UserController extends Controller
             'password'  =>  'required'
         ]);
 
-        $credentials = $request->only('email_id','password');
+        $credentials = $request->only('email','password');
 
         if(Auth::attempt($credentials))
         {
-           return view('user.dash',compact('user'));;
+           return view('user.dash');
         }
 
-        return redirect('login')->with('success', 'Login details are not valid');
+        return redirect('user_login')->with('success', 'Login details are not valid');
     }
 }

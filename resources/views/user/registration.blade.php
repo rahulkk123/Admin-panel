@@ -57,7 +57,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                     <div class="signin-container">
                     
-                        <form action="{{Route('Register')}}"  method="post" enctype="multipart/form-data">
+                        <form action="{{Route('validate.Register')}}"  method="post" enctype="multipart/form-data">
                             
                             
                              @csrf

@@ -27,7 +27,7 @@
                 <div class="card">
                     <div class="card-header">Admin Login</div>
                     <div class="card-body">
-                        <form action="{{Route('login')}}" method="POST">
+                        <form action="{{ route('Admin.login') }}"  method="POST" >
                             @csrf
                             <div class="form-group mb-3">
                                 <input type="text" name="email" class="form-control" placeholder="Email" />

@@ -36,9 +36,21 @@
                         @endif
                     </div>
                     <div class="form-group mb-3">
+                        <input type="text" name="mobile" class="form-control" placeholder="mobile number" />
+                        @if($errors->has('mobile'))
+                            <span class="text-danger">{{ $errors->first('mobile') }}</span>
+                        @endif
+                    </div>
+                    <div class="form-group mb-3">
                         <input type="password" name="password" class="form-control" placeholder="Password" />
                         @if($errors->has('password'))
                             <span class="text-danger">{{ $errors->first('password') }}</span>
+                        @endif
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="password" name="confirm_password" class="form-control" placeholder="Re-enter Password" />
+                        @if($errors->has('confirm_password'))
+                            <span class="text-danger">{{ $errors->first('confirm_password') }}</span>
                         @endif
                     </div>
                     <div class="d-grid mx-auto">
