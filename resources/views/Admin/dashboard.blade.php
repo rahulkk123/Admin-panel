@@ -249,12 +249,23 @@
           </li>
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Products
+                Product
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ Route('product') }}" class="nav-link ">
+                  <p>Add product </p><i class="fa fa-plus"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="{{Route('show-product')}}" class="nav-link">
+                  <p>Show</p>
+                </a>
+              </li>
+            </ul>
+          </li>
          
         </ul>
       </nav>

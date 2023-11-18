@@ -652,8 +652,8 @@ body{
 .biolife-panels-actions-wrap .biolife-current-panel-title{
     display: block;
     text-align: center;
-    line-height: 50px;
-    padding: 0 50px;
+    line-height: 0px;
+    padding: 0 0px;
     font-weight: 600;
     color: #333333;
     text-overflow: ellipsis;
@@ -664,7 +664,7 @@ body{
     background: inherit;
     border-color: inherit;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 0px;
     left: 0;
     right: 0;
     top: 0;
@@ -673,10 +673,10 @@ body{
     box-sizing: border-box;
 }
 .biolife-next-panel {
-    width: 50px;
-    height: 50px;
+    width:10px;
+    height: 10px;
     text-align: center;
-    line-height: 50px;
+    line-height: 10px;
     position: absolute;
     top: 0;
     right: 0;
@@ -1158,7 +1158,7 @@ body.open-mobile-search .header-area.layout-02{
     line-height: 0;
     bottom: 100%;
     right: 0;
-    margin-bottom: 7px;
+  
 }
 #biolife-main-panel .menu-name .sup-item{
     right: auto;
@@ -1178,7 +1178,7 @@ body.open-mobile-search .header-area.layout-02{
     border-radius: 3px;
     min-width: 40px;
     text-align: center;
-    padding: 0 3px;
+    padding: 0 1px;
     line-height: 18px;
     color: #ffffff;
     position: relative;
@@ -1897,12 +1897,11 @@ body.open-mobile-search .header-area.layout-02{
 .vertical-category-block>.wrap-menu>.menu>li>a{
     color: #333333;
     display: inline-block;
-    width: 100%;
+    width: 1500px;
 }
 .vertical-category-block>.wrap-menu>.menu li.has-megamenu>a,
 .vertical-category-block>.wrap-menu .menu li.has-child>a{
     position: relative;
-    padding-right: 5px;
 }
 .vertical-category-block .wrap-menu .menu li.has-child{
     position: relative;
@@ -1996,6 +1995,7 @@ body.open-mobile-search .header-area.layout-02{
     position: static;
     width: 100%;
     height: 500px;
+    padding: 20px;
 }
 .biolife-products-block .products-list{
     padding: 0;

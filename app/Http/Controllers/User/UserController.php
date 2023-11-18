@@ -5,8 +5,12 @@ namespace App\Http\Controllers\User;
 use App\Models\User;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+
 
 use App\Http\Controllers\Controller;
+use App\Models\CategoryTab;
+use App\Models\Department;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Contracts\Service\Attribute\Required;
@@ -17,7 +21,14 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('user.homepage');
+
+//$item=Department::all();
+     
+$categories=Department::with('category')->get();
+
+$departments =CategoryTab::with('department')->get('id');
+return view('user.homepage',compact('departments','categories'));
+
     }
 
     // login and registration

@@ -5,12 +5,14 @@ namespace App\Http\Controllers\Admin;
 use App\Models\CategoryTab;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Department;
 
 class CategoryController extends Controller
 {
     public function cat_create()
     {
-        return view('Admin.category.create');
+        $department=Department::all();
+        return view('Admin.category.create',compact('department'));
     }
     public function show()
     {

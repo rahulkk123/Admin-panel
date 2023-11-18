@@ -23,17 +23,13 @@
                     </div>
                     <div class="form-group mb-3" name="department_id">
                         <label for="content">Department Id:</label>
-                    <select class="form-select" name="department" aria-label="Department_id">
-                        <option selected></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="2">4</option>
-                        <option value="3">5</option>
-                        <option value="2">6</option>
-                        <option value="3">7</option>
-                        <option value="3">8</option>
-                      </select>
+                        <select class="form-select" name="department" aria-label="category_id">
+                            <option value="">select </option>
+                            @foreach ($department as $item)
+                            <option  value="{{$item->id}}" selected>{{$item->name}}</option>
+                            
+                            @endforeach
+                          </select>
                     </div>
                          
                     <div class="btn">

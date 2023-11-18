@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DepartmentController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\User\UserController;
-
 
 
 /*
@@ -50,6 +50,19 @@ Route::get('show-category', [CategoryController::class, 'show' ])->name('show-ca
 Route::get('/edit-category{id}', [CategoryController::class, 'edit' ])->name('edit-category');
 Route::put('/update-category/{id}',[CategoryController::class,'update'])->name('update-category');
 Route::get('/delete-category/{id}',[CategoryController::class,'distroy'])->name('delete-category');
+
+
+//product
+Route::get('product',[ProductController::class,'create'])->name('product');
+Route::post('add-product',[ProductController::class,'store'])->name('add-product');
+Route::get('edit-product{id}',[ProductController::class,'edit'])->name('edit-product');
+Route::get('show-product',[ProductController::class,'product'])->name('show-product');
+
+Route::put('/update-product/{id}',[ProductController::class,'update'])->name('update-product');
+
+Route::get('/delete-product/{id}',[ProductController::class,'delete'])->name('delete-product');
+
+
 //user
 
 
@@ -75,7 +88,7 @@ Route::get('/delete-category/{id}',[CategoryController::class,'distroy'])->name(
 
 
 
-Route::get('/',[UserController::class,'index'])->name('/');
+Route::get('',[UserController::class,'index'])->name('homepage');
 Route::get('user_login',[UserController::class,'user_login']);
 
 Route::post('validate.login',[UserController::class,'login'])->name('validate');

@@ -11,13 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('category_tabs', function (Blueprint $table) {
+        Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('description');
-            $table->boolean('status')->default(1)->comment('1:Active,0:inactive');
-            $table->unsignedBigInteger('department_id');
-            $table->foreign('department_id')->references('id')->on('departments');
+            $table->string('price');
+            $table->boolean('active')->default(1)->comment('1:Active,0:inactive');
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('category_tabs');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('categorytabes');
+        Schema::dropIfExists('products');
     }
 };

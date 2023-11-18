@@ -110,7 +110,7 @@
                   <p>Add Department </p><i class="fa fa-plus"></i></a>
               </li>
               <li class="nav-item">
-                <a href="{{Route('show-dep')}}" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Show</p>
                 </a>
               </li>
@@ -149,7 +149,7 @@
                     <p>Add product </p><i class="fa fa-plus"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{Route('show-product')}}" class="nav-link">
+                  <a href="" class="nav-link">
                     <p>Show</p>
                   </a>
                 </li>
