@@ -17,7 +17,7 @@ rel="stylesheet"/>
             <div class="table-title">
                 <div class="row">
 
-<a href="{{Route('product')}}" class="btn btn-primary add-new"><i class="fa fa-plus"></i> Add New</a>
+<a href="{{Route('product')}}" class="btn btn-primary add-new"><i class="fa fa-plus"></i> Add  product</a>
 </div>
 </div>
 </div>
