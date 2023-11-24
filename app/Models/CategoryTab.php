@@ -10,9 +10,15 @@ class CategoryTab extends Model
     protected $tables="category_tabs";
     protected $fillable=['name', 'description', 'status', ];
 
-    public function department(){
+    public function departments(){
 
         return $this->belongsTo(Department::class);
     }
+    
+    public function products(){
+
+        return $this->hasMany(Product::class,'category_id','id'); 
+    }  
+    
 
 }

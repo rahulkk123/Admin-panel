@@ -14,8 +14,9 @@ class Department extends Model
 
     public function category(){
 
-        return $this->hasMany(CategoryTab::class,'department_id', 'id','name'); 
+        return $this->hasMany(CategoryTab::class,'department_id','id'); 
     } 
-
+    
+ 
 }
 

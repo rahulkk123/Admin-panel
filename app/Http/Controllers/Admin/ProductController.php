@@ -15,21 +15,20 @@ class ProductController extends Controller
     public function product()
 
     {
-        
 
-            $product=Product::all();
-            return view('Admin.product.show', ['product' => $product]);
-    
+
+        $product = Product::all();
+        return view('Admin.product.show', ['product' => $product]);
     }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
-   
+
     {
-         $category=CategoryTab::all();
-        return view('Admin.product.create',compact('category'));
+        $category = CategoryTab::all();
+        return view('Admin.product.create', compact('category'));
     }
 
     /**
@@ -37,15 +36,14 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $input=new Product();
-        $input->name=$request->input('name');
-        $input->description=$request->input('description');
-        $input->price=$request->input('price');
-        $input->active=$request->input('active');
-        $input->category_id=$request->input('category_id');
+        $input = new Product();
+        $input->name = $request->input('name');
+        $input->description = $request->input('description');
+        $input->price = $request->input('price');
+        $input->active = $request->input('active');
+        $input->category_id = $request->input('category_id');
         $input->save();
-return redirect('product');
-        
+        return redirect('product');
     }
 
     /**
@@ -61,8 +59,8 @@ return redirect('product');
      */
     public function edit(string $id)
     {
-        $product=product::find($id);
-        return view('Admin.product.edit',['product' => $product]);
+        $product = product::find($id);
+        return view('Admin.product.edit', ['product' => $product]);
     }
 
     /**
@@ -70,14 +68,14 @@ return redirect('product');
      */
     public function update(Request $request, string $id)
     {
-        $input=product::find($id);
+        $input = product::find($id);
         $input->name = $request->input('name');
         $input->description = $request->input('description');
-       $input->price=$request->input('price');
-       $input->active=$request->input('active');
-       $input->category_id=$request->input('category_id');
-      $input->update();
-      return redirect('show-product');
+        $input->price = $request->input('price');
+        $input->active = $request->input('active');
+        $input->category_id = $request->input('category_id');
+        $input->update();
+        return redirect('show-product');
     }
 
     /**
@@ -85,7 +83,7 @@ return redirect('product');
      */
     public function delete(string $id)
     {
-        $input=Product::find($id);
+        $input = Product::find($id);
         $input->delete();
         return redirect('show-product');
     }

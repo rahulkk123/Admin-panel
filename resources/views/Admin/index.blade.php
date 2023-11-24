@@ -6,6 +6,7 @@
         <div class="card">
         
             <div class="card-body">
+                <h3 style="color: darkslategrey">Add Department</h3>
                 <form action="{{url("add-dept")}}" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group mb-3">

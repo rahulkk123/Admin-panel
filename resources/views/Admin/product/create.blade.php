@@ -3,13 +3,13 @@
 @section('content')
 
 
-<div class="row justify-content-center">
+<div class="row justify-content-center ">
     <div class="col-md-8">
         <div class="card">
         
             <div class="card-body">
                 <div class="card shadow">
-                <h3>Add Category</h3>
+                <h3>Add Product</h3>
                 <form action="add-product"   method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group mb-3">
@@ -34,11 +34,8 @@
                         <input type="radio" name="active" value="0" class="form-control" >In-Active
                     </div><br>
                     <div class="form-group mb-3" name="category_id">
-                        <label for="content">Category Id:</label>
-                    
-                            
-                    
-                    <select class="form-select" name="category_id" aria-label="category_id">
+                        <label for="content">Category Id:</label>       
+                     <select class="form-select" name="category_id" aria-label="category_id">
                         <option value="">select </option>
                         @foreach ($category as $item)
                         <option  value="{{$item->id}}" selected>{{$item->name}}</option>
@@ -49,7 +46,7 @@
                     </div>
                    
                     <div class="btn">
-                        <button type="submit" class="btn btn-secondary">Add</button>
+                        <button type="submit" class="btn btn-warning">Add</button>
                     </div>
                 </form>
             </div>

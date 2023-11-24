@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Models\CategoryTab;
 use App\Models\Department;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Contracts\Service\Attribute\Required;
@@ -24,10 +25,11 @@ class UserController extends Controller
 
 //$item=Department::all();
      
-$categories=Department::with('category')->get();
-
-$departments =CategoryTab::with('department')->get('id');
-return view('user.homepage',compact('departments','categories'));
+$departments=Department::with('category')->get();
+ $categories=CategoryTab::with('departments')->get();
+$products = Product::with('subcategory')->get();
+$subcategory =CategoryTab::with('products')->get();
+return view('user.homepage',compact('departments','categories','subcategory','products'));
 
     }
 

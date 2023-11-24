@@ -88,7 +88,7 @@ Route::get('/delete-product/{id}',[ProductController::class,'delete'])->name('de
 
 
 
-Route::get('',[UserController::class,'index'])->name('homepage');
+Route::get('/',[UserController::class,'index'])->name('homepage');
 Route::get('user_login',[UserController::class,'user_login']);
 
 Route::post('validate.login',[UserController::class,'login'])->name('validate');

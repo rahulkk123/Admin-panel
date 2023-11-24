@@ -100,34 +100,38 @@
                             </div>
                              
                             <div class="wrap-menu">
-                                @foreach   ($categories as $product)
-                                <ul class="menu clone-main-menu">
+                                @foreach($departments  as $product)
+                                
+                                  <ul class="menu clone-main-menu">
                                   
                             
                                     <li class="menu-item menu-item-has-children has-megamenu">
                                         <a href="#" class="menu-name" data-title="Vegetables"> <img src="/upload/{{ ($product->photo) }}" height="35" width="35">&nbsp;<b>{{ $product->name}}</b></a>
-                                  
+                                   
                                         <div class="wrap-megamenu lg-width-900 md-width-640 background-mega-01">
                                             <div class="mega-content">
+                                              
                                                 <div class="row">
-                                                    <div class="col-lg-3 col-md-4 col-sm-12 xs-margin-bottom-25 md-margin-bottom-0">
-                                                       
+                                                    @foreach($product->category as $names)
+                                                       <div class="col-lg-3 col-md-4 col-sm-12 xs-margin-bottom-25 md-margin-bottom-0">
+                                                      
                                                         <div class="wrap-custom-menu vertical-menu" >
-                                                           
-                                                            <h4 class="menu-title" value="">{{$product->category->implode('name')}}</h4>
+                                                         
+                                                            <h4 class="menu-title" >{{ $names->name }}</h4>
+                                                       
                                                               <ul class="menu">
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
-                                                                <li><a href="#"></a></li>
+                                                                @foreach($names->products as $product)
+                                                            
+                                                                    
+                                                           
+                                                                <li><a  href=""><b>{{$product->name}}</b></a></li>
+                                                                @endforeach
                                                               </ul>
-                                                          </div>
+                                                        
+                                                          </div> 
+                                                      
                                                       </div>
+                                                           @endforeach 
                                                            <div class="col-lg-5 col-md-4 col-sm-12 lg-padding-left-27 md-margin-bottom-0">
                                                             <div class="biolife-brand vertical md-boder-left-30">
                                              
@@ -136,7 +140,9 @@
                                                        
                                                             </div>
                                                         </div>
-                                                     </div>
+                                                
+                                                      
+                                                        </div>
                                                 </div>
                                             </div>
                                           </li>      
