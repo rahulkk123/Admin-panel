@@ -188,7 +188,7 @@
           <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin</a>
+          <a href="#" class="d-block">{{Auth::user()->name}}</a>
         </div>
       </div>
 
@@ -262,6 +262,11 @@
               <li class="nav-item">
                 <a href="{{Route('show-product')}}" class="nav-link">
                   <p>Show</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{Route('show-productimage')}}" class="nav-link">
+                  <p>product image </p>
                 </a>
               </li>
             </ul>
@@ -867,35 +872,7 @@
   </aside>
   <!-- /.control-sidebar -->
 </div>
-<div class="row justify-content-center">
-  <div class="col-md-4">
-      <div class="card">
-      
-          <div class="card-body">Add Department
-              <form action="" method="POST">
-                  @csrf
-                  <div class="form-group mb-3">
-                      <label for="name">Department Name</label>
-                      <input type="text" name="name" class="form-control" placeholder="Category Name " />
-                      
-                  </div>
-                  <label for="image">Image</label>
-                  <div class="form-group mb-3">
-                      <input type="file" name="image" class="form-control" placeholder="" />
-                  </div>
-                  <div class="form-group mb-3">
-                      <label for="content">Description</label>
-                      <textarea name="content" class="form-control" placeholder="Description" ></textarea>
-                  </div>
-                       
-                  <div class="btn">
-                      <button type="submit" class="btn btn-secondary">Add</button>
-                  </div>
-              </form>
-          </div>
-      </div>
-  </div>
-</div>
+
 <footer class="main-footer">
   <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
   All rights reserved.

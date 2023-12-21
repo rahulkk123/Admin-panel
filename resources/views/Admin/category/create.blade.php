@@ -13,7 +13,7 @@
                     @csrf
                     <div class="form-group mb-3">
                         <label for="name">Category Name</label>
-                        <input type="text" name="name" class="form-control" placeholder="Department Name " />
+                        <input type="text" name="name" class="form-control" placeholder=" Category Name " />
                         
                     </div>
                     

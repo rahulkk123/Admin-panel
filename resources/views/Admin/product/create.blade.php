@@ -44,7 +44,14 @@
                       </select>
                    
                     </div>
-                   
+                    <label for="image">Image</label>
+                    <div class="form-group mb-3">
+                        <input type="file" name="upload"  class="form-control" placeholder="" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" name="product_id"  class="form-control" placeholder="product_id" />
+                    </div>
+                    
                     <div class="btn">
                         <button type="submit" class="btn btn-warning">Add</button>
                     </div>

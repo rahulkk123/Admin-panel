@@ -5,6 +5,8 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DepartmentController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\ProductImageController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\User\UserController;
 
 
@@ -19,8 +21,8 @@ use App\Http\Controllers\User\UserController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('card', function () {
+    return view('user.Cart.products');
 });
 Route::view('dash','Admin');
 
@@ -62,36 +64,25 @@ Route::put('/update-product/{id}',[ProductController::class,'update'])->name('up
 
 Route::get('/delete-product/{id}',[ProductController::class,'delete'])->name('delete-product');
 
+//productimage
+Route::get('show-productimage',[ProductImageController::class,'index'])->name('show-productimage');
+
+
+Route::get('/cart{id}', [CartController::class, 'index'])->name('cart');
+Route::get('add-to-cart/{id}', [CartController::class, 'addCart'])->name('add.to.cart');
+Route::get('view-cart', [CartController::class, 'cart'])->name('view-cart');
+Route::patch('update', [CartController::class, 'update'])->name('update.cart');
+Route::delete('delete-cart', [CartController::class,'remove'])->name('cart.remove');
 
 //user
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Route::get('/',[UserController::class,'index'])->name('homepage');
+Route::get('',[UserController::class,'index'])->name('homepage');
 Route::get('user_login',[UserController::class,'user_login']);
 
 Route::post('validate.login',[UserController::class,'login'])->name('validate');
+Route::post('home_login',[UserController::class,'dashboard'])->name('user_validate');
 //registration
 
 Route::get('registration',[UserController::class,'reg_login'])->name('user.registration');

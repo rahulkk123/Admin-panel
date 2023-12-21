@@ -10,7 +10,7 @@ rel="stylesheet">
 rel="stylesheet"/>
 </head><div class="container-lg">
     <div class="card-header bg-secondary">
-        <h3 class="text-light fw-bold">All Category</h3>
+        <h3 class="text-light fw-bold">All product</h3>
       </div>
     <div class="table-responsive">
         <div class="table-wrapper">
@@ -29,9 +29,11 @@ rel="stylesheet"/>
         <th>price</th>
         <th>Status</th>
         <th>Category_Id</th>
+        <th>Image</th>
         <th width="280px"><i class="fa fa-pencil" ></i><i class="fa fa-remove"> </th>
     </tr>
     @foreach ($product as $items)
+  
     <tr>
         <td>{{ $items->id }}</td>
     
@@ -40,15 +42,20 @@ rel="stylesheet"/>
         <td>{{ $items->price }}</td>
         <td>{{ $items->active }}</td>
         <td>{{ $items->category_id }}</td>
-       
+        
+            
+        <td>@foreach ($items->products as $item) 
+            <img src="/products/{{ ($item->upload) }}" width= '75' height='75' class="img img-responsive">
+            @endforeach  </td>
+           
         <td ><a class="btn btn-mute" href="{{url('edit-product'. $items->id)}}"><i class="fa fa-pencil"></i></a>
         <a class="btn btn-danger" href="{{url('delete-product/' . $items->id )}}"><span class="fa fa-remove"><br></span> </a></td>
 
-         
-        
+      
+        @endforeach 
     </tr>
 
-    @endforeach
+    
 
 
 </tr>      

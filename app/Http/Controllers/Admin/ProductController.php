@@ -5,8 +5,9 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\CategoryTab;
 use App\Models\Product;
+use App\Models\ProductImage;
+use Illuminate\Support\Facades\File;
 use Illuminate\Http\Request;
-
 class ProductController extends Controller
 {
     /**
@@ -16,9 +17,11 @@ class ProductController extends Controller
 
     {
 
-
-        $product = Product::all();
-        return view('Admin.product.show', ['product' => $product]);
+        $products=Product::with('products')->get()->take(10);
+        $image=ProductImage::with('image')->get();
+        $product = Product::paginate(10);
+       
+        return view('Admin.product.show',compact('product','products','image'));
     }
 
     /**
@@ -28,6 +31,7 @@ class ProductController extends Controller
 
     {
         $category = CategoryTab::all();
+       
         return view('Admin.product.create', compact('category'));
     }
 
@@ -36,15 +40,30 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+       
+
         $input = new Product();
         $input->name = $request->input('name');
         $input->description = $request->input('description');
         $input->price = $request->input('price');
         $input->active = $request->input('active');
         $input->category_id = $request->input('category_id');
+        
         $input->save();
+        $second=new ProductImage();
+          $second->product_id = $request->input('product_id');
+        if($request->hasfile('upload'))
+        {
+            $file=$request->file('upload');
+            $extention=$file->getClientOriginalExtension();
+            $filename=time().'.'.$extention;
+            $file->move('products/',$filename);
+            $second->upload=$filename;
+        }
+   
+        $second->save();
         return redirect('product');
-    }
+    } 
 
     /**
      * Display the specified resource.
@@ -75,6 +94,7 @@ class ProductController extends Controller
         $input->active = $request->input('active');
         $input->category_id = $request->input('category_id');
         $input->update();
+        
         return redirect('show-product');
     }
 

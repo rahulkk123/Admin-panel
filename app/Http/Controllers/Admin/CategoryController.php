@@ -44,6 +44,7 @@ class CategoryController extends Controller
       $input->update();
       return redirect('show-category');
     }
+    
     function distroy($id)
     {
     $input=CategoryTab::find($id);

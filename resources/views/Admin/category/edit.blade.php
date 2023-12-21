@@ -66,7 +66,7 @@
             </div>
             <div class="my-2">
                 <label for="email">Department_id:</label>
-                 <input type="text" class="form-control, input sm" name="department" value="{{$category->department_id }}"><br><br>
+                 <input type="text" class="form-control, input sm" name="department" value="{{$category->department_id }}"><br><br> 
                 </div>
 
             <div class="my-2">
