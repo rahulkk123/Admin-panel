@@ -370,7 +370,7 @@
                                          
                                             <p class="btn-control">
                                                 <a href="{{ route('view-cart') }}" class="btn view-cart">view cart</a>
-                                                <a href="#" class="btn">checkout</a>
+                                                <a href="{{Route('checkout') }}" class="btn">checkout</a>
                                             </p>
                                         </div>
                                     </div>
@@ -395,16 +395,7 @@
     <div class="container">
 
   
-
-        @if(session('success'))
-    
-            <div class="alert alert-success">
-    
-              {{ session('success') }}
-    
-            </div> 
-    
-        @endif
+@include('sweetalert::alert')
     </div>
     <!--Hero Section-->
     <div class="hero-section hero-background">

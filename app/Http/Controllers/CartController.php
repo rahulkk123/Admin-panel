@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cart;
+use App\Models\order;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\ProductImage;
 use Nette\Utils\Strings;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class CartController extends Controller
 {
@@ -42,25 +44,25 @@ class CartController extends Controller
 
         } else {
 
-            $cart[$id] = [
-
-                "name" => $product->name,
-
-                "quantity" => 1,
-
-                "price" => $product->price
-            ];
+            $cart[$id] = Cart::create([
+                'name'=>$product->name,
+                'price'=>$product->price,
+                'quantity'=>1
+               ]);
 
         }
-       Cart::create([
-        'name'=>$product->name,
-        'price'=>$product->price,
-        'quantity'=>1
-       ]);
+       
 
         session()->put('cart',$cart);
 
-        return redirect()->back()->with('success', 'Product added to cart successfully!');
+         Alert::success('products Added','your added products');
+
+        return redirect()->back();
+    }
+
+    public function cartindex(){
+        $carts=Cart::all();
+        return view('user.Cart.products', compact('carts'));
     }
 
   
@@ -98,15 +100,89 @@ class CartController extends Controller
             if(isset($cart[$request->id])) {
 
                 unset($cart[$request->id]);
+                
 
                 session()->put('cart', $cart);
 
             }
 
-            session()->flash('success', 'Product removed successfully');
+            session()->flash('success');  
+            Alert::success('Item Delete','Complete Shipping');
 
+            
         }
 
     }
 
+    function Checkout(){
+        return view('user.Cart.checkout');
+    }
+
+
+      function PlaceOrder(Request $request){
+
+        $order=new order();
+        $order->fname=$request->input('fname');
+         $order->lname=$request->input('lname');
+          $order->email=$request->input('email');
+           $order->mobile=$request->input('mobile');
+              $order->address=$request->input('address');
+              $order->area=$request->input('area');
+              $order->post=$request->input('post');
+              $order->city=$request->input('city');
+              $order->pincode=$request->input('pin');
+              $order->district=$request->input('district');
+              $order->state=$request->input('state');
+              $order->country=$request->input('con');
+              $order->save();
+        
+        
+        
+         \Stripe\Stripe::setApiKey(config('stripe.sk'));
+        $product= $request->get('name');
+        $total = $request->get('total');
+ 
+        $payment = \Stripe\Checkout\Session::create([
+           
+            'line_items'  => [
+                [
+                    'price_data' => [
+                        'currency'     => 'USD',
+                        'product_data' => [
+                            "name" => $product,
+                        ],
+
+                          'unit_amount' =>100,
+                    ],
+                        'quantity'   => 1,
+                        
+                ],
+                 
+            ],
+            
+            'mode'        => 'payment',
+        
+            'success_url' => route('success'),
+            'cancel_url'  => route('homepage'),
+        
+        ]);
+      
+        return redirect()->away( $payment->url);
+    }
+ 
+    public function success( Request $request) 
+    { 
+        $stripe = new \Stripe\StripeClient(env('STRIPE_SECRET'));
+
+        $response = $stripe->checkout->sessions->retrieve($request->session_id);
+
+        return redirect()->route('stripe.index')
+                            ->with('success','Payment successful.');
+        return "Thanks for you order You have just completed your payment";
+    }
 }
+    
+
+  
+     
+

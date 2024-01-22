@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>village mart </title>
+    <title>Village mart </title>
     <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet">
@@ -18,7 +18,10 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/main-color.css">
-    <script src="assets/js/jquery.min.js"></script>
+    
+    <!--paypal-->
+    <link rel="stylesheet" type="text/css" href="https://www.paypalobjects.com/webstatic/en_US/developer/docs/css/cardfields.css"
+  />
 </head>
 <body class="biolife-body">
 
@@ -37,11 +40,10 @@
     <header id="header" class="header-area style-01 layout-03">
         <div class="header-top bg-main hidden-xs">
             <div class="container">
-                
                 <div class="top-bar left">
                     <ul class="horizontal-menu">
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>villagemart</a></li>
-                        <li><a href="#">Free Shipping for all Order </a></li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Organic@company.com</a></li>
+                        <li><a href="#">Free Shipping for all Order of $99</a></li>
                     </ul>
                 </div>
                 <div class="top-bar right">
@@ -51,9 +53,14 @@
                         <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
                     </ul>
                     <ul class="horizontal-menu">
-                       
-                         
-                       
+                        <li class="horz-menu-item currency">
+                            <select name="currency">
+                                <option value="eur">€ EUR (Euro)</option>
+                                <option value="usd" selected>$ USD (Dollar)</option>
+                                <option value="usd"> GBP (Pound)</option>
+                                <option value="usd">¥ JPY (Yen)</option>
+                            </select>
+                        </li>
                         <li class="horz-menu-item lang">
                             <select name="language">
                                 <option value="fr">French (EUR)</option>
@@ -62,22 +69,53 @@
                                 <option value="jp">Japan (JPY)</option>
                             </select>
                         </li>
-                        <li><a href="login.html" class="login-link"><i class="biolife-icon icon-login"></i>Login/Register</a></li>
+                      
                     </ul>
-                    
                 </div>
-           
-           
             </div>
-            
-
-            
         </div>
-       
+        <div class="header-middle biolife-sticky-object ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-md-6 col-xs-6">
+                        <a href="index-2.html" class="biolife-logo"><img src="assets/images/logo/logo.png" alt="biolife logo" width="135" height="34"></a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
+                        <div class="primary-menu">
+                            <ul class="menu biolife-menu clone-main-menu clone-primary-menu" id="primary-menu" data-menuname="main menu">
+                                <li class="menu-item"><a href="index-2.html">Home</a></li>
+                                <li class="menu-item menu-item-has-children has-megamenu">
+                                    <a href="#" class="menu-name" data-title="Shop" >Shop</a>
+                                    <div class="wrap-megamenu lg-width-900 md-width-750">
+                                        <div class="mega-content">  
+                                        </div>
+                                    </div>
+                                </li> 
+                          </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                            
+                         
+                            <div class="mobile-menu-toggle">
+                                <a class="btn-toggle" data-object="open-mobile-menu" href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom hidden-sm hidden-xs">
     </header>
+
     <!--Hero Section-->
     <div class="hero-section hero-background">
-        <h1 class="page-title">Organic Fruits</h1>
+        <h1 class="page-title">Organic</h1>
     </div>
 
     <!--Navigation section-->
@@ -85,222 +123,175 @@
         <nav class="biolife-nav">
             <ul>
                 <li class="nav-item"><a href="index-2.html" class="permal-link">Home</a></li>
-                <li class="nav-item"><span class="current-page">ShoppingCart</span></li>
+                <li class="nav-item"><span class="current-page">Shipping</span></li>
             </ul>
         </nav>
     </div>
     @include('sweetalert::alert')
-    <div class="page-contain shopping-cart">
+    <div class="page-contain checkout">
 
         <!-- Main content -->
         <div id="main-content" class="main-content">
-            <div class="container">
+            <div class="container sm-margin-top-37px">
+                <div class="row">
 
-                <!--Top banner-->
+                    <!--checkout progress box-->
+          <form method="POST"     action="{{Route ('Addorder',['price' =>00,'product' =>""]) }}"   >   
+            @csrf     
+        <div class="card">
+            <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
+               <div class="card-body">
+               <h3>Basic details</h3>
+              <hr>
+                  <div class="row checkout-form">
+                 <div class="col-md-6">
+                <label for="First Name">First Name</label>
+                <input type="text" class="form-control" name="fname" placeholder="enter first name" required>
+              </div>
+              <div class="col-md-6">
+                <label for="Last Name">Last Name</label>
+                <input type="text" class="form-control" name="lname" placeholder="enter last name"   required>
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="Email Id">Email Id</label>
+                <input type="email" class="form-control" name="email" placeholder="example123@gmail.com"  required>
+              </div> 
+               <div class="col-md-6  mt-3">
+                <label for="Mobile">Mobile Number</label>
+                <input type="text" class="form-control" name="mobile" maxlength="10" placeholder="xxxxxx1234"  required>
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="Address">Address</label>
+                <input type="text" class="form-control" name="address" placeholder="house name/No"  required>
+              </div>
+           
+              <div class="col-md-6  mt-3">
+                <label for="Area">Area</label>
+                <input type="text" class="form-control" name="area" placeholder="" required >
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="post office">post office</label>
+                <input type="text" class="form-control" name="post" placeholder="">
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="Pincode">City</label>
+                <input type="text" class="form-control" name="city" placeholder="" required >
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="Pincode">Pincode</label>
+                <input type="text" class="form-control" name="pin" placeholder="" required>
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="District">District</label>
+                <input type="text" class="form-control" name="district" placeholder="" required>
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="state">State</label>
+                <input type="text" class="form-control" name="state" placeholder="" required >
+              </div>
+              <div class="col-md-6  mt-3">
+                <label for="Country">Country</label>
+                <input type="text" class="form-control" name="con" placeholder=""  required>
+                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                <input type='hidden' name="total"  value="{{ Session::get("name")}}">
+                <input type='hidden' name="name" value="{{ Session::get("total")}}" >
+              </div>
+          
                
-                <!--Cart Table-->
-                <div class="shopping-cart-container">
-                    <div class="row">
-                        <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                            <h3 class="box-title">Your cart items</h3>
-                            <form class="shopping-cart-form" action="#" method="post">
-                                <table class="shop_table cart-form">
-                                    <thead>
-                                    <tr>
-                                        <th class="product-name">Product Name</th>
-                                        <th class="product-price">Quantity</th>
-                                        <th class="product-quantity">Price</th>
-                                        <th class="product-subtotal">Total</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        @php $total = 0 @endphp
-
-                                        @if(session('cart'))
-                                
-                                            @foreach(session('cart') as $id => $items)
-                                
-                                                @php $total += $items['price'] * $items['quantity'] @endphp
-                                
-                                                <tr data-id="{{ $id }}">
-                                                    <td data-th="Product" class="actions" >{{ $items['name'] }} <br>
-                                                    
- 
-                                                                
-                                                            </div>
-                                
-                                                        </div>
-                                
-                                                    </td>
-                                
-                                                    <td class="Quantity" data-title="Quantity">
-                                                        <div class="quantity-box type1">
-                                                            <div class="qty-input">
-                                                                <input type="number" value="{{ $items['quantity'] }}" class="quantity update-cart" data-max_value="20" data-min_value="1" data-step="1">
-                                                               
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                      
-                                                    <td data-th="Subtotal" class="text-center">₹{{ $items['price'] * $items['quantity'] }}</td>
-                                
-                                                    <td data-th="Subtotal" class="text-center">₹{{ $items['price'] * $items['quantity'] }}</td>
-                                                    <td class="actions" data-th="">
-
-                                                        <button class="btn btn-danger btn-sm remove"><i class="fa fa-trash-o"></i></button>
-                                
-                                                    </td>
-                                                </tr>
-                                
-                                            @endforeach
-                                        @endif
-                                   
-                                        
-                                        
-                                       
-                                        <tfoot>
-
-                                            <tr>
-                                    
-                                                <td colspan="5" class="text-right"><h3><strong>Total ₹{{ $total }}</strong></h3></td>
-                                    
-                                            </tr>
-                                    
-                                          
-                                        </td>
-                            
-                                    
-                                        
-                                        
-                                       
-                                        
-                                    </tr>
-                                    <tr class="cart_item wrap-buttons">
-                                        <td class="wrap-btn-control" colspan="4">
-                                            <a href="{{Route('homepage')}}" class="btn back-to-shop">Back to Shop</a>
-                                           
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-
-                        <script  type="text/javascript" >
-                           $(".update-cart").change(function (e) {
-                           e.preventDefault();
-                           var ele = $(this);
-                           $.ajax({
-                           url: '{{ route('update.cart') }}',
-                            method: "patch",
-                            data: {
-                            _token: '{{ csrf_token() }}', 
-                             id: ele.parents("tr").attr("data-id"), 
-
-                    quantity: ele.parents("tr").find(".quantity").val()
-                                                          },
-
-                                   success: function (response) {
-
-                                            window.location.reload();
-
-                                                          }
-
-                                                         });
-
-                        });
-
-                              $(".remove").click(function (e) {
-                                e.preventDefault();var ele = $(this);
-                                if(confirm("Are you sure want to remove?")) 
-                                {
-                                     $.ajax({
-                                        url: '{{ route('cart.remove') }}',
-                                         method: "DELETE",
-                                         data: {
-                                                 _token: '{{ csrf_token() }}', 
-                                     id: ele.parents("tr").attr("data-id")  },
-                                     success: function (response) {
-                                         window.location.reload();
-                                         }
-                                        });
-
-}
-
-});
-
-</script>
-                        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                            <div class="shpcart-subtotal-block">
-                                <div class="subtotal-line">
-                                    <b class="stt-name">Subtotal <span class="sub"></span></b>
-                                    <span class="stt-price">₹{{ $total }}</span>
-                                </div>
-                                
-                                <div class="tax-fee">
-                                    <p class="title">Est. Taxes & Fees</p>
-            
-                                </div>
-                                <div class="btn-checkout">
-                                    <a href="{{Route('checkout') }}" class="btn checkout">Check out</a>
-                                </div>
-                                <div class="biolife-progress-bar">
-                                    
-                                <p class="pickup-info"><b>Free Pickup</b> is available as soon as today More about shipping and pickup</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
+                </div> 
+                </div>
+        
+                 </form>
 
-                <!--Related Product-->
-                <div class="product-related-box single-layout">
-                    <div class="biolife-title-box lg-margin-bottom-26px-im">
-                        <span class="biolife-icon icon-organic"></span>
-                        <span class="subtitle">All the best item for You</span>
-                        <h3 class="main-title">Related Products</h3>
-                    </div>
-                    <ul class="products-list biolife-carousel nav-center-02 nav-none-on-mobile" data-slick='{"rows":1,"arrows":true,"dots":false,"infinite":false,"speed":400,"slidesMargin":0,"slidesToShow":5, "responsive":[{"breakpoint":1200, "settings":{ "slidesToShow": 4}},{"breakpoint":992, "settings":{ "slidesToShow": 3, "slidesMargin":20}},{"breakpoint":768, "settings":{ "slidesToShow": 2, "slidesMargin":10}}]}'>
-                        @foreach($products as $item )
-                        <li class="product-item">
+                    <!--Order Summary-->
 
-                            <div class="contain-product layout-default">
-                                <div class="product-thumb">
-                                    <a href="#" class="link-to-product">
-                                        @foreach ($item->products as $items)
-                                        <img src="/products/{{$items->upload}}" alt="dd" width="270" height="270" class="product-thumnail">
-                                       
-                                    </a>
-                                </div>
-                               
+              
+        
+                                
+                    <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12 sm-padding-top-48px sm-margin-bottom-0 xs-margin-bottom-15px">
+                        <div class="order-summary sm-margin-bottom-80px">
+                            <div class="title-block">
+                                <h3 class="title">Order Summary</h3>
+                            </div>
                           
-                                <div class="info">
-                                    <b class="categories">Fresh Fruit</b>
-                                    <h4 class="product-title"><a href="#" class="pr-name">{{$item->name}}</a></h4>
-                                    <div class="price ">
-                                        <ins><span class="price-amount"><span class="currencySymbol">₹</span>{{$item->price}}</span></ins>
-                                    @endforeach
-                                    </div>
-                                    <div class="slide-down-box">
-                                        <p class="message">All products are carefully selected to ensure food safety.</p>
-                                        <div class="buttons">
-                                            <a href="#" class="btn wishlist-btn"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                                            <a href="{{ route('add.to.cart', $item->id) }}" class="btn add-to-cart-btn"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i>add to cart</a>
-                                            <a href="#" class="btn compare-btn"><i class="fa fa-random" aria-hidden="true"></i></a>
-                                        </div>
-                                        
-                                       
-                                    </div>
-                                  
-                                </div>
-                            </div>
-                        </li>
-                        @endforeach
-                       
-                    </ul>
-                </div>
+                            <div class="cart-list-box short-type">
+                                
+                                <ul class="cart-list">
+                                    @php $total = 0 @endphp
 
+                                @if(session('cart'))
+                        
+                                    @foreach(session('cart') as $id => $items)
+                                    
+                                    @php $total += $items['price'] * $items['quantity'] @endphp
+                                    <li class="cart-elem">
+                                      
+                                        <div class="cart-item">
+                                        
+                                            <div class="product-thumb">
+                                                <a class="prd-thumb" href="#">
+                                                   
+                                                </a>
+                                             </div>
+                                              <div class="info">
+                                               <ol> <li type="1"><a href="#" class="pr-name">{{ $items->name}} </a> </li> </ol> 
+                                                <hr>
+                                               </div>
+                                               
+                                              <div class="price price-contain">
+                                                <ins><span class="price-amount"><span class="currencySymbol"></span>₹{{ $items->price}}.00 </span></ins>
+                                                @endforeach
+                                                @endif
+                                            </div>
+                                         
+                                        </div>
+                                    </li>
+                                </ul>
+                             
+                                    <div class="subtotal-line">
+                                        <b class="stt-name">Packing Charge</b>
+                                        <span class="stt-price">25.00</span>
+                                    </div>
+                         
+                              
+                                    <div class="subtotal-line">
+                                        <b class="stt-name">Tax</b>
+                                        <span class="stt-price">0.55</span>
+                                    </div>
+                              
+                                <ul class="subtotal">
+                                    <li>
+                                        <div class="subtotal-line">
+                                            <b class="stt-name">Subtotal</b>
+                                            <span  style="color: darkgreen"  class="stt-price"> ₹{{ $total+25+0.55 }}</span>
+                                         
+                                        </div>
+                                     
+                                    </li>
+                                    
+                                   
+                                   
+                                </ul>
+                                <div id="paypal-button-container"></div>
+                               
+                                <div class="btn">
+                              
+                                       
+                                        <button  style="size: 200px" class="btn-lg btn-success ">Place Order</button>
+                                        </form>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                
+
+                </div>
             </div>
         </div>
     </div>
+
     <!-- FOOTER -->
     <footer id="footer" class="footer layout-03">
         <div class="footer-content background-footer-03">
@@ -309,9 +300,7 @@
                     <div class="col-lg-4 col-md-4 col-sm-9">
                         <section class="footer-item">
                             <a href="#" class="logo footer-logo"><img src="assets/images/logo/logo.png" alt="biolife logo" width="135" height="34"></a>
-                            <div class="footer-phone-info">
-                               
-                            </div>
+                           
                             <div class="newsletter-block layout-01">
                                 <h4 class="title">Newsletter Signup</h4>
                                 <div class="form-content">
@@ -331,7 +320,8 @@
                                     <div class="wrap-custom-menu vertical-menu-2">
                                         <ul class="menu">
                                             <li><a href="#">About Us</a></li>
-                                        
+                                            <li><a href="#">About Our Shop</a></li>
+                                            <li><a href="#">Secure Shopping</a></li>
                                             <li><a href="#">Delivery infomation</a></li>
                                             <li><a href="#">Privacy Policy</a></li>
                                             <li><a href="#">Our Sitemap</a></li>
@@ -358,19 +348,17 @@
                             <h3 class="section-title">Transport Offices</h3>
                             <div class="contact-info-block footer-layout xs-padding-top-10px">
                                 <ul class="contact-lines">
+                                    
                                     <li>
                                         <p class="info-item">
-                                            <i class="biolife-icon icon-location"></i>
-                                            <b class="desc">7563 St. Vicent Place, Glasgow, Greater Newyork NH7689, UK </b>
-                                        </p>
-                                    </li>
-                                    <li>
+                                            <i class="biolife-icon icon-phone"></i>
                                        
+                                        </p>
                                     </li>
                                     <li>
                                         <p class="info-item">
                                             <i class="biolife-icon icon-letter"></i>
-                                            <b class="desc">Email:  contact@market.com</b>
+                                            <b class="desc">Email:  contact@company.com</b>
                                         </p>
                                     </li>
                                     <li>
@@ -398,7 +386,7 @@
                         <div class="separator sm-margin-top-70px xs-margin-top-40px"></div>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-xs-12">
-                        <div class="copy-right-text"><p><a href="templateshub.net">Templates Hub</a></p></div>
+                       <div class="copy-right-text"><p><a href="templateshub.net">Templates Hub</a></p></div>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-xs-12">
                         <div class="payment-methods">
@@ -454,18 +442,14 @@
         <div class="block-global-contain">
             <div class="glb-item my-account">
                 <b class="title">My Account</b>
-                <ul class="list">
-                    <li class="list-item"><a href="#">Login/register</a></li>
-                    <li class="list-item"><a href="#">Wishlist <span class="index">(8)</span></a></li>
-                    <li class="list-item"><a href="#">Checkout</a></li>
-                </ul>
+              
             </div>
             <div class="glb-item currency">
                 <b class="title">Currency</b>
                 <ul class="list">
                     <li class="list-item"><a href="#">€ EUR (Euro)</a></li>
                     <li class="list-item"><a href="#">$ USD (Dollar)</a></li>
-                    <li class="list-item"><a href="#">₹ GBP (Pound)</a></li>
+                    <li class="list-item"><a href="#"> GBP (Pound)</a></li>
                     <li class="list-item"><a href="#">¥ JPY (Yen)</a></li>
                 </ul>
             </div>
@@ -483,9 +467,8 @@
 
     <!-- Scroll Top Button -->
     <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
+    <script src="https://www.paypal.com/sdk/js?components=buttons,card-fields&client-id=<%= clientId %>"></script>
     <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-  
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.countdown.min.js"></script>
     <script src="assets/js/jquery.nice-select.min.js"></script>

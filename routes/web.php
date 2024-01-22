@@ -22,7 +22,7 @@ use App\Http\Controllers\User\UserController;
 */
 
 Route::get('card', function () {
-    return view('user.Cart.products');
+    return view('user.Cart.pay');
 });
 Route::view('dash','Admin');
 
@@ -71,16 +71,20 @@ Route::get('show-productimage',[ProductImageController::class,'index'])->name('s
 Route::get('/cart{id}', [CartController::class, 'index'])->name('cart');
 Route::get('add-to-cart/{id}', [CartController::class, 'addCart'])->name('add.to.cart');
 Route::get('view-cart', [CartController::class, 'cart'])->name('view-cart');
+
 Route::patch('update', [CartController::class, 'update'])->name('update.cart');
 Route::delete('delete-cart', [CartController::class,'remove'])->name('cart.remove');
 
+Route::get ('/checkout', [CartController::class,'Checkout'])->name('checkout');
+
+Route::post('PlaceOrder',[CartController::class,'PlaceOrder'])->name('Addorder');
+
+Route::get('success',[CartController::class,'success'])->name('success');
+
 //user
-
-
 
 Route::get('',[UserController::class,'index'])->name('homepage');
 Route::get('user_login',[UserController::class,'user_login']);
-
 Route::post('validate.login',[UserController::class,'login'])->name('validate');
 Route::post('home_login',[UserController::class,'dashboard'])->name('user_validate');
 //registration

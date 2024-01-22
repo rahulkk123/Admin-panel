@@ -1,0 +1,206 @@
+Laravel 10 How To Integrate Stripe Payment Gateway
+
+Download Laravel App
+
+composer create-project --prefer-dist laravel/laravel my-app
+C:\xampp\htdocs\laravel10project>composer create-project laravel/laravel laravel10project
+
+Connecting our Database
+
+open .env file root directory.
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laraveldb
+DB_USERNAME=root
+DB_PASSWORD=
+
+Database Migration
+php artisan migrate
+
+C:\xampp\htdocs\laravel\laravel10project>php artisan migrate
+Migration table created successfully.
+
+check database table
+
+Create Controller
+C:\xampp\htdocs\laravel\laravel10project>php artisan make:controller StripeController
+
+app\Http\Controllers\StripeController.php
+
+?
+
+//
+<?php 
+ 
+namespace App\Http\Controllers;
+ 
+use Illuminate\Http\Request;
+ 
+class StripeController extends Controller
+{
+    public function checkout()
+    {
+        return view('checkout');
+    }
+ 
+    public function session(Request $request)
+    {
+        \Stripe\Stripe::setApiKey(config('stripe.sk'));
+ 
+        $productname = $request->get('productname');
+        $totalprice = $request->get('total');
+        $two0 = "00";
+        $total = "$totalprice$two0";
+ 
+        $session = \Stripe\Checkout\Session::create([
+            'line_items'  => [
+                [
+                    'price_data' => [
+                        'currency'     => 'USD',
+                        'product_data' => [
+                            "name" => $productname,
+                        ],
+                        'unit_amount'  => $total,
+                    ],
+                    'quantity'   => 1,
+                ],
+                 
+            ],
+            'mode'        => 'payment',
+            'success_url' => route('success'),
+            'cancel_url'  => route('checkout'),
+        ]);
+ 
+        return redirect()->away($session->url);
+    }
+ 
+    public function success()
+    {
+        return "Thanks for you order You have just completed your payment. The seeler will reach out to you as soon as possible";
+    }
+}
+Install Stripe Composer
+https://github.com/stripe/stripe-php
+composer require stripe/stripe-php
+C:\xampp\htdocs\laravel\my-app>composer require stripe/stripe-php
+
+Create File stripe.php config\stripe.php
+
+?
+
+//config\stripe.php
+<?php
+ 
+return [
+    'pk' => env('STRIPE_KEY'),
+    'sk' => env('STRIPE_SECRET'),
+];
+Login to your stripe account and copy the STRIPE_KEY and STRIPE_SECRET
+
+open .env file add this
+
+STRIPE_KEY=pk_test_xxxxxxxxxxxxxxxxxxx
+STRIPE_SECRET=sk_test_xxxxxxxxxxxxxx
+
+Create View File
+Bootstrap 5
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css
+resources/views/checkout.blade.php
+?
+
+
+//resources/views/checkout.blade.php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel 10 How To Integrate Stripe Payment Gateway</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class='row'>
+            <h1>Laravel 10 How To Integrate Stripe Payment Gateway</h1>
+            <div class='col-md-12'>
+                <div class="card">
+                    <div class="card-header">
+                    Laravel 10 How To Integrate Stripe Payment Gateway
+                    </div>
+                    <div class="card-body">
+                    <table id="cart" class="table table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th style="width:50%">Product</th>
+                            <th style="width:10%">Price</th>
+                            <th style="width:8%">Quantity</th>
+                            <th style="width:22%" class="text-center">Subtotal</th>
+                            <th style="width:10%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-sm-3 hidden-xs"><img src="{{ asset('img') }}/1.jpg" width="100" height="100" class="img-responsive"/></div>
+                                    <div class="col-sm-9">
+                                        <h4 class="nomargin">Asus Vivobook 17 Laptop - Intel Core 10th</h4>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Price">$6</td>
+                            <td data-th="Quantity">
+                                <input type="number" value="1" class="form-control quantity cart_update" min="1" />
+                            </td>
+                            <td data-th="Subtotal" class="text-center">$6</td>
+                            <td class="actions" data-th="">
+                                <button class="btn btn-danger btn-sm cart_remove"><i class="fa fa-trash-o"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="5" style="text-align:right;"><h3><strong>Total $6</strong></h3></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" style="text-align:right;">
+                                <form action="/session" method="POST">
+                                <a href="{{ url('/') }}" class="btn btn-danger"> <i class="fa fa-arrow-left"></i> Continue Shopping</a>
+                                <input type="hidden" name="_token" value="{{csrf_token()}}">
+                                <input type='hidden' name="total" value="6">
+                                <input type='hidden' name="productname" value="Asus Vivobook 17 Laptop - Intel Core 10th">
+                                <button class="btn btn-success" type="submit" id="checkout-live-button"><i class="fa fa-money"></i> Checkout</button>
+                                </form>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+Routes
+routes/web.php
+?
+
+//routes/web.php
+<?php
+ 
+use Illuminate\Support\Facades\Route;
+ 
+Route::get('/', function () {
+    return view('welcome');
+});
+ 
+Route::get('/checkout', 'App\Http\Controllers\StripeController@checkout')->name('checkout');
+Route::post('/session', 'App\Http\Controllers\StripeController@session')->name('session');
+Route::get('/success', 'App\Http\Controllers\StripeController@success')->name('success');
+Run C:\xampp\htdocs\laravel\my-app>php artisan serve
+Starting Laravel development server: http://127.0.0.1:8000/checkout

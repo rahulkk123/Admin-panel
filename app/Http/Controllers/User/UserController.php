@@ -12,7 +12,7 @@ use App\Http\Controllers\Controller;
 use App\Models\CategoryTab;
 use App\Models\Department;
 use App\Models\Product;
-use App\Models\ProductImage;
+use App\Models\ProductImage; 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Contracts\Service\Attribute\Required;

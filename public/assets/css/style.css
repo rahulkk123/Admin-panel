@@ -5257,6 +5257,7 @@ body.open-overlay #overlay{
     color: #222222;
     font-weight: 700;
     text-transform: uppercase;
+  
 }
 .order-summary .subtotal-line .stt-name .sub,
 .shpcart-subtotal-block .subtotal-line .stt-name .sub{
@@ -5264,6 +5265,7 @@ body.open-overlay #overlay{
     color: #666666;
     text-transform: initial;
     font-weight: 400;
+   
 }
 .order-summary .subtotal-line .stt-price,
 .shpcart-subtotal-block .subtotal-line .stt-price{
@@ -5278,6 +5280,7 @@ body.open-overlay #overlay{
     border-bottom: 1px solid #e6e6e6;
     margin-top: 29px;
     padding-bottom: 33px;
+   
 }
 .shpcart-subtotal-block .tax-fee p{
     display: block;
@@ -5288,9 +5291,11 @@ body.open-overlay #overlay{
 }
 .shpcart-subtotal-block .tax-fee .title{
     text-transform: uppercase;
+
 }
 .shpcart-subtotal-block .btn-checkout{
     margin-top: 40px;
+    
 }
 .shpcart-subtotal-block .btn-checkout .btn{
     border: none;
@@ -5304,6 +5309,7 @@ body.open-overlay #overlay{
     background-color: #ababab;
     padding: 13px 15px 12px;
     font-weight: 700;
+  
 }
 .shpcart-subtotal-block .btn-checkout .btn:hover{
     background-color: #444444 !important;
