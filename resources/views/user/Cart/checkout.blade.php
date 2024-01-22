@@ -136,7 +136,7 @@
                 <div class="row">
 
                     <!--checkout progress box-->
-          <form method="POST"     action="{{Route ('Addorder',['price' =>00,'product' =>""]) }}"   >   
+          <form method="POST"     action="{{Route ('Addorder') }}"   >   
             @csrf     
         <div class="card">
             <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
@@ -259,12 +259,15 @@
                                         <b class="stt-name">Tax</b>
                                         <span class="stt-price">0.55</span>
                                     </div>
-                              
+                                    <select class="form-select " name="paymode">
+                                        <option value="Online payment ">Online payment </option>
+                                        <option value="Cash Ondelivery ">Cash Ondelivery </option>
+                                    </select>
                                 <ul class="subtotal">
                                     <li>
                                         <div class="subtotal-line">
                                             <b class="stt-name">Subtotal</b>
-                                            <span  style="color: darkgreen"  class="stt-price"> ₹{{ $total+25+0.55 }}</span>
+                                            <input type="text" name="total"  style="color: darkgreen" value="₹{{ $total+25+0.55 }}" >
                                          
                                         </div>
                                      
@@ -273,11 +276,17 @@
                                    
                                    
                                 </ul>
+                                <div  class="btn btn-primary">
+                                <select class="form-select " style="color: red" name="paymode">
+                                    <option value="Online payment ">Online payment </option>
+                                    <option value="Cash Ondelivery ">Cash Ondelivery </option>
+                                </select>
+                                </div>
                                 <div id="paypal-button-container"></div>
                                
                                 <div class="btn">
                               
-                                       
+
                                         <button  style="size: 200px" class="btn-lg btn-success ">Place Order</button>
                                         </form>
                                     
